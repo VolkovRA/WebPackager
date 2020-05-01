@@ -1,0 +1,7 @@
+-lib Pako
+--class-path src 
+--class-path lib 
+-main Main
+-dce full
+-js "bin/index.js"
+#-debug
