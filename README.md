@@ -32,8 +32,8 @@ dataLength, nameLength, name
 ```
 Где:
  * dataLength `unsigned Int32` - Длина файла.
- * nameLength `unsigned Int16` - Длина имени файла. (Не более 65535 символов ASCI)
- * name `string ASCI` - Имя файла. Строка закодирована с помощью: `encodeURIComponent()`.
+ * nameLength `unsigned Int16` - Длина имени файла. (Не более 65535 символов ASCII)
+ * name `string ASCII` - Имя файла. Строка закодирована с помощью: `encodeURIComponent()`.
 
 Порядок байтов: `big-endian`.
 
