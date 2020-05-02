@@ -3,5 +3,5 @@
 --class-path lib 
 -main Main
 -dce full
--js "bin/index.js"
+-js "bin/web/index.js"
 #-debug

@@ -1,2 +1,3 @@
-/bin/index.js
+/bin/web/index.js
+/bin/web/pako.min.js
 /node_modules
