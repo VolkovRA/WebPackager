@@ -4,7 +4,8 @@
     "homepage": "https://github.com/VolkovRA/WebPackager/blob/master/README.md",
     "bugs": "https://github.com/VolkovRA/WebPackager/issues",
     "bin": {
-        "pkg": "bin/node/cli.js"
+        "pack": "bin/node/pack.js",
+        "unpack": "bin/node/unpack.js"
     },
     "repository": {
         "type": "git",

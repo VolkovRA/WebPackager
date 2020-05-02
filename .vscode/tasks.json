@@ -2,11 +2,11 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "compile",
+			"label": "compile web",
 			"type": "shell",
 			"command": "haxe",
 			"args": [
-				"build.hxml"
+				"build web.hxml"
 			],
 			"problemMatcher": [
 				"$haxe-absolute",
@@ -23,11 +23,29 @@
 			}
         },
         {
-			"label": "compile cli",
+			"label": "compile pack",
 			"type": "shell",
 			"command": "haxe",
 			"args": [
-				"build cli.hxml"
+				"build pack.hxml"
+            ],
+			"problemMatcher": [
+				"$haxe-absolute",
+				"$haxe",
+				"$haxe-error",
+				"$haxe-trace"
+			],
+			"group": "none",
+			"presentation": {
+				"clear": true
+			}
+        },
+        {
+			"label": "compile unpack",
+			"type": "shell",
+			"command": "haxe",
+			"args": [
+				"build unpack.hxml"
             ],
 			"problemMatcher": [
 				"$haxe-absolute",

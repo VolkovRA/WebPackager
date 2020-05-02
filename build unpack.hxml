@@ -3,7 +3,7 @@
 -lib Pako
 --class-path src
 --class-path lib
--main Cli
+-main Unpack
 -dce full
--js "bin/node/cli.js"
+-js "bin/node/unpack.js"
 #-debug

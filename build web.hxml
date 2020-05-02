@@ -2,7 +2,7 @@
 -lib Pako
 --class-path src 
 --class-path lib 
--main Main
+-main Web
 -dce full
 -js "bin/web/index.js"
 #-debug
