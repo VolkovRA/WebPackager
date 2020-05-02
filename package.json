@@ -1,10 +1,10 @@
 {
-    "name": "web-packager",
+    "name": "webpackager",
     "version": "1.0.0",
     "homepage": "https://github.com/VolkovRA/WebPackager/blob/master/README.md",
     "bugs": "https://github.com/VolkovRA/WebPackager/issues",
     "bin": {
-        "pkg": "bin/node/cli"
+        "pkg": "bin/node/cli.js"
     },
     "repository": {
         "type": "git",

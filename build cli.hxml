@@ -1,0 +1,9 @@
+-lib node-shebang
+-lib hxnodejs
+-lib Pako
+--class-path src
+--class-path lib
+-main Cli
+-dce full
+-js "bin/node/cli.js"
+#-debug
