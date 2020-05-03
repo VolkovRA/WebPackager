@@ -7,7 +7,7 @@
 	"version": "1.0.0",
 	"releasenote": "Release",
 	"contributors": ["VolkovRA"],
-	"classPath": "lib"
+	"classPath": "lib",
 	"dependencies" : {
 		"pako": "git:https://github.com/VolkovRA/HaxePako.git"
 	}
