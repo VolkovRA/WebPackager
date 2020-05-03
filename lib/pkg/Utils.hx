@@ -52,4 +52,42 @@ class Utils
 
         return StringTools.urlDecode(arr.join(''));
     }
+
+    /**
+	 * Получить строковое представление объёма информации.
+	 * Возвращает строковое описание количества байт, кб, мб и т.д.
+	 * @param	length Объём информации. (Байт)
+	 * @return	Строковое представление.
+	 */
+	static public function getBytesSize(length:Int):String {
+		
+		// Таблица измерения количества информации:
+		// https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B3%D0%B0%D0%B1%D0%B0%D0%B9%D1%82
+		// 	
+		// +------------------------------+
+		// |        ГОСТ 8.417—2002       |            
+		// | Название Обозначение Степень |	
+		// +------------------------------+
+		// | байт        Б         10^0   |
+		// | килобайт    Кбайт     10^3   |
+		// | мегабайт    Мбайт     10^6   |
+		// | гигабайт    Гбайт     10^9   |
+		// | терабайт    Тбайт     10^12  |
+		// | петабайт    Пбайт     10^15  |
+		// | эксабайт    Эбайт     10^18  |
+		// | зеттабайт   Збайт     10^21  |
+		// | йоттабайт   Ибайт     10^24  |
+		// +------------------------------+
+		
+        if (length < 1e3)		return length + " byte";
+		if (length < 1e6)		return untyped Math.trunc(length / 1e1) / 1e2 + " KB";
+		if (length < 1e9)		return untyped Math.trunc(length / 1e4) / 1e2 + " MB";
+		if (length < 1e12)		return untyped Math.trunc(length / 1e7) / 1e2 + " GB";
+		if (length < 1e15)		return untyped Math.trunc(length / 1e10) / 1e2 + " TB";
+		if (length < 1e18)		return untyped Math.trunc(length / 1e13) / 1e2 + " PB";
+		if (length < 1e21)		return untyped Math.trunc(length / 1e16) / 1e2 + " EB";
+		if (length < 1e24)		return untyped Math.trunc(length / 1e19) / 1e2 + " ZB";
+		
+		return untyped Math.trunc(length / 1e22) / 1e2 + " YB";
+    }
 }
