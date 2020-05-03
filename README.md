@@ -107,7 +107,7 @@ class Main {
 1. Установите haxelib, чтобы можно было использовать библиотеки Haxe.
 2. Выполните в терминале команду, чтобы установить библиотеку WebPackager глобально себе на локальную машину:
 ```
-haxelib git WebPackager https://github.com/VolkovRA/WebPackager.git master
+haxelib git webpackager https://github.com/VolkovRA/WebPackager.git master
 ```
 Синтаксис команды:
 ```
@@ -119,7 +119,7 @@ haxelib git minject git@github.com:massiveinteractive/minject.git v2          # 
 3. Добавьте в свой проект библиотеку WebPackager, чтобы использовать её в коде. Если вы используете HaxeDevelop, то просто добавьте в файл .hxproj запись:
 ```
 <haxelib>
-	<library name="WebPackager" />
+	<library name="webpackager" />
 </haxelib>
 ```
 4. Установите библиотеку для использования pako в Haxe:
