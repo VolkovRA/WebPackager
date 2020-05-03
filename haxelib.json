@@ -1,0 +1,14 @@
+{
+	"name": "webpackager",
+	"url": "https://github.com/VolkovRA/WebPackager/blob/master/README.md",
+	"license": "MIT",
+	"tags": ["package", "compress", "web"],
+	"description": "Simple web packager for compress many resources",
+	"version": "1.0.0",
+	"releasenote": "Release",
+	"contributors": ["VolkovRA"],
+	"classPath": "lib"
+	"dependencies" : {
+		"pako": "git:https://github.com/VolkovRA/HaxePako.git"
+	}
+}

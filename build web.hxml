@@ -8,7 +8,7 @@
 #-lib hxnodejs
 # --------------------
 
--lib Pako
+-lib pako
 --class-path src 
 --class-path lib 
 -main Web

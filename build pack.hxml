@@ -1,6 +1,6 @@
 -lib node-shebang
 -lib hxnodejs
--lib Pako
+-lib pako
 --class-path src
 --class-path lib
 -main Pack
